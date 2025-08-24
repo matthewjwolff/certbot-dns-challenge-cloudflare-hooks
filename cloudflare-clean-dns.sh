@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source "/etc/cloudflare_dns.sh"
+source "/run/secrets/cloudflare_dns"
 
 CHALLENGE_PREFIX="_acme-challenge"
 CHALLENGE_DOMAIN="${CHALLENGE_PREFIX}.${CERTBOT_DOMAIN}"
